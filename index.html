@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" id="login-btn">Login</a></li>
+                <li><a href="#" id="register-btn">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h1>Welcome to E-Learning Platform</h1><br>
+            <p>Learn new skills and advance your career with our online courses.</p><br>
+            <button id="get-started-btn">Get Started</button>
+        </section>
+        <section id="courses">
+            <h2>Our Courses</h2>
+            <div class="course-grid">
+                <div class="course-card">
+                    <img src="/images/c.png" alt="Course 1">
+                    <h3>Course 1: Introduction to C Programming</h3>
+                    <p>This course covers the basics of programming.</p>
+                    <button class="enroll-btn">Enroll Now</button>
+                </div>
+                <div class="course-card">
+                    <img src="/images/c++.webp" alt="Course 2">
+                    <h3>Course 2: C++</h3>
+                    <p>This course covers the basics of c++.</p>
+                    <button class="enroll-btn">Enroll Now</button>
+                </div>
+                <div class="course-card">
+                    <img src="/images/webhd.jpg" alt="Course 2">
+                    <h3>Course 3: Web Development</h3>
+                    <p>This course covers the basics of web development.</p>
+                    <button class="enroll-btn">Enroll Now</button>
+                </div>
+                <div class="course-card">
+                    <img src="/images/java.jpg" alt="Course 2">
+                    <h3>Course 4: Core Java</h3>
+                    <p>This course covers the basics of core java.</p>
+                    <button class="enroll-btn">Enroll Now</button>
+                </div>
+                <div class="course-card">
+                    <img src="/images/dsa.png" alt="Course 2">
+                    <h3>Course 5: DSA</h3>
+                    <p>This course covers the basics of Data Structure Algorithm.</p>
+                    <button class="enroll-btn">Enroll Now</button>
+                </div>
+                <div class="course-card">
+                    <img src="/images/ds.jpg" alt="Course 2">
+                    <h3>Course 6: Data Science</h3>
+                    <p>This course covers the basics of Data Science.</p>
+                    <button class="enroll-btn">Enroll Now</button>
+                </div>
+                <!-- Add more course cards here -->
+            </div>
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are a team of educators and developers who are passionate about online learning.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Get in touch with us for any questions or feedback.</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea><br><br>
+                <input type="submit" value="Send">
+            </form>
+        </section>
+        <div id="login-modal" class="modal">
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"><br><br>
+                <input type="submit" value="Login">
+            </form>
+        </div>
+        <div id="register-modal" class="modal">
+            <h2>Register</h2>
+            <form id="register-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"><br><br>
+                <input type="submit" value="Register">
+            </form>
+        </div>
+    </main>
+    <script src="script.js"></script>
+
+    
+   <!-- Footer HTML -->
+<footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>About Us</h5>
+          <p>It was founded in 2024 by ABC University, Computer science professors Vivek Ranjan and Rishav Razz. It works with universities and other organizations to offer online courses.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Tutors</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Follow Us On:</h5>
+          <ul>
+            <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <p class="copyright">Copyright @2024 Online Learning Platform. All rights reserved.</p>
+  </footer>
+</body>
+</html>
